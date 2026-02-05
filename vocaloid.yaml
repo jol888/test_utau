@@ -1,0 +1,92 @@
+# Vocaloid Metadata
+# 演示虚拟歌手元信息配置文件
+
+name: "祐雪"
+source: "xhze_"
+gender: "female"
+summary: "祐雪是一个不存在的虚拟歌姬，用来演示配置文件的写法。"
+description: |
+  # 祐雪声库详细介绍
+  
+  **祐雪**是一个不存在的虚拟歌姬，基于专业歌手"xhze_"的声音样本训练而成。
+  
+  ## 主要特点：
+  - **音色清澈**：具有甜美清澈的滚木音色，适合多种音乐风格
+  - **表现力丰富**：不支持情感参数调节，也不能实现细腻的情感表达
+  - **高音稳定**：在高音区保持与低音一致的稳定性和延展性
+  
+  ## 适用场景：
+  - 流行歌曲制作
+  - 古风音乐创作
+  - 游戏/动漫配乐
+  - 内容创作配乐
+
+languages:
+  - "zh-CN"
+  - "zh-TW"
+  - "en-US"
+  - "ja-JP"
+
+contact:
+  email: "xhzeww@gmail.com"
+
+vocab_type: "歌唱+语音合成"
+style: ["流行", "古风", "电子", "动漫"]
+tags: ["清澈音色", "高音稳定", "情感丰富", "多语种支持"]
+
+version: "1.2.3-beta"
+release_date: "2024-03-15"
+creator: "星辰音乐工作室"
+contributors: ["李乐", "王音", "张韵", "陈律"]
+
+technical_details:
+  sample_rate: 44100
+  bit_depth: 24
+  format: "pth"
+  framework: "PyTorch"
+  parameters: 50000000
+  training_data: |
+    使用超过0小时的纯净人声数据训练，包含多种风格和语言。
+    数据经过严格的降噪和均衡处理，确保音质一致性。
+
+license:
+  type: "CC-BY-NC-SA-4.0"
+  terms: |
+    # 星语声库使用协议
+    
+    1. **非商业使用**：可自由用于非商业目的的音乐创作和分享
+    2. **署名要求**：使用时必须注明"声源：星语 by 星辰音乐工作室"
+    3. **相同方式共享**：基于本声库的二次创作需采用相同协议分享
+    4. **禁止行为**：禁止用于政治、暴力、色情等违法或不道德内容
+    
+    完整协议请访问：https://star-voice.com/license
+  commercial_allowed: false
+  attribution_required: true
+  share_alike: true
+  modifications_allowed: true
+
+requirements:
+  software: ["DiffSinger", "OpenUTAU", "ACE Studio"]
+  hardware: "建议使用16GB以上内存，NVIDIA GTX 1060以上显卡"
+  dependencies: ["torch>=1.12.0", "numpy>=1.21.0", "librosa>=0.9.0"]
+
+links:
+  demo_video: "https://www.bilibili.com/video/BV1xxx"
+  tutorial: "https://docs.star-voice.com/tutorial"
+  documentation: "https://docs.star-voice.com"
+  community: "https://discord.gg/starvoice"
+
+acknowledgements:
+  - "感谢声源提供者 xhze_ 老师的专业录音"
+  - "感谢开源社区提供的训练工具"
+  - "感谢所有测试用户的反馈与建议"
+
+notes: |
+  ## 使用提示：
+  
+  1. 建议使用C6以下的音域以获得最佳效果
+  2. 情感参数调整范围：0.0-1.0
+  3. 最新更新修复了某些辅音发音问题
+  
+  ## 技术支持：
+  如有问题请在GitHub提交Issue.
